@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 class ColorPalates {
 
   /// Custom Colors
-  static Color get statusBarColor => const Color(0xffF5F5F5);
-  static Color get primaryColor => const Color(0xff006BD5);
-  static Color get secondaryColor => const Color(0xff1C1919);
-  static Color get customGrey => const Color(0xff818181);
-  static Color get deepYellow => const Color(0xffE5AC00);
+  static Color get deepOrange => const Color(0xffFF6B23);
+  static Color get lightOrange => const Color(0xffFF9727);
+  static Color get lightPurple => const Color(0xff02308E);
+  static Color get customBlack => const Color(0xff010832);
+  static Color get greyColor => const Color(0xff686868);
+  static Color get backgroundColor => const Color(0xffF7F8F9);
 
   /// Default Colors
   static Color get defaultWhite => Colors.white;

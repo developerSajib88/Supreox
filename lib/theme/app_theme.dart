@@ -4,6 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 class AppTheme {
   static ThemeData themeData =
       ThemeData(
-          fontFamily: GoogleFonts.dmSans().fontFamily,
+          fontFamily: GoogleFonts.inter().fontFamily,
       );
 }
