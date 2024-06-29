@@ -22,10 +22,10 @@ class AddToCartState extends Equatable{
       productDataRes: null
   );
 
-  AddToCartState copyWith(
-      bool? isLoading,
-      ProductDataRes? productDataRes
-  )=> AddToCartState(
+  AddToCartState copyWith({
+    bool? isLoading,
+    ProductDataRes? productDataRes
+  })=> AddToCartState(
       isLoading: isLoading ?? this.isLoading,
       productDataRes: productDataRes ?? this.productDataRes
   );
