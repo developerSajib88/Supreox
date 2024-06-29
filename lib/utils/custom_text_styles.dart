@@ -13,23 +13,23 @@ class CustomTextStyles {
 
 
   static TextStyle titleTextStyles = GoogleFonts.inter(
-    fontSize: 10.sp,
+    fontSize: 7.sp,
     color: ColorPalates.customBlack,
     fontWeight: FontWeight.bold
   );
 
 
   static TextStyle descriptionTextStyles = GoogleFonts.inter(
-      fontSize: 6.sp,
+      fontSize: 5.sp,
       color: ColorPalates.greyColor,
-      fontWeight : FontWeight.normal
+      fontWeight : FontWeight.w400
   );
 
 
   static TextStyle buttonTextStyles = GoogleFonts.inter(
-      fontSize: 8.sp,
-      color: ColorPalates.defaultWhite,
-      fontWeight: FontWeight.bold
+      fontSize: 6.sp,
+      color: ColorPalates.greyColor,
+      fontWeight: FontWeight.w500
   );
 
 

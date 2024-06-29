@@ -26,6 +26,7 @@ class ApiMethod {
 
   // Get Method
   Future<Map<String, dynamic>?> get(String url) async {
+    prevReport(method: "POST", url: url);
     try {
       final response = await http
           .get(Uri.parse(url), headers: requestHeaders())
