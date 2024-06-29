@@ -1,7 +1,9 @@
 
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:supreox/application/product/product_state.dart';
+import 'package:supreox/application/product/product_state_notifier.dart';
+import 'package:supreox/core/dependency_injection/dependency_injection.dart';
 
-// Authentication Provider
-final authenticationProvider = StateNotifierProvider
-    .autoDispose<AuthenticationStateNotifier, AuthenticationState>((ref) =>
-        AuthenticationStateNotifier(authenticationDomain: getIt(), ref: ref));
+// Add to cart provider
+final productProvider = StateNotifierProvider<ProductStateNotifier, ProductState>((ref) =>
+        ProductStateNotifier(addToCartDomain: getIt())..init());

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:supreox/presentation/product/product_screen.dart';
 import 'package:supreox/theme/app_theme.dart';
 
 class SupreoxApp extends StatelessWidget {
@@ -16,6 +17,7 @@ class SupreoxApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: AppTheme.themeData,
         themeMode: ThemeMode.light,
+        home: const ProductScreen(),
       ),
     );
   }
