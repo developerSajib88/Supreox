@@ -1,11 +1,11 @@
 import 'package:equatable/equatable.dart';
 import 'package:supreox/data/model/product/product_data_res.dart';
 
-class AddToCartState extends Equatable{
+class ProductState extends Equatable{
   final bool isLoading;
   final ProductDataRes? productDataRes;
 
-  const AddToCartState({
+  const ProductState({
     required this.isLoading,
     required this.productDataRes
   });
@@ -17,15 +17,15 @@ class AddToCartState extends Equatable{
     productDataRes
   ];
 
-  factory AddToCartState.init()=> const AddToCartState(
+  factory ProductState.init()=> const ProductState(
       isLoading: false,
       productDataRes: null
   );
 
-  AddToCartState copyWith({
+  ProductState copyWith({
     bool? isLoading,
     ProductDataRes? productDataRes
-  })=> AddToCartState(
+  })=> ProductState(
       isLoading: isLoading ?? this.isLoading,
       productDataRes: productDataRes ?? this.productDataRes
   );

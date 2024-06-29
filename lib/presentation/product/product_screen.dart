@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:supreox/utils/constants/ui_constants.dart';
 
 class ProductScreen extends HookConsumerWidget {
   const ProductScreen({super.key});
@@ -12,7 +13,14 @@ class ProductScreen extends HookConsumerWidget {
         child: Container(
           width: 1.sw,
           height: 1.sh,
-          child: ,
+          padding: padding6,
+          child: Column(
+            children: [
+
+
+            ],
+          ),
+
         ),
       ),
     );

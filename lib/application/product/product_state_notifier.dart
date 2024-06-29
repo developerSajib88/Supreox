@@ -1,13 +1,13 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:supreox/application/add_to_cart/add_to_cart_state.dart';
-import 'package:supreox/domain/add_to_cart/add_to_cart_domain.dart';
+import 'package:supreox/application/product/product_state.dart';
+import 'package:supreox/domain/add_to_cart/product_domain.dart';
 
-class AddToCartStateNotifier extends StateNotifier<AddToCartState>{
+class ProductStateNotifier extends StateNotifier<ProductState>{
 
-  final AddToCartDomain addToCartDomain;
-  AddToCartStateNotifier({required this.addToCartDomain}):super(AddToCartState.init());
+  final ProductDomain addToCartDomain;
+  ProductStateNotifier({required this.addToCartDomain}):super(ProductState.init());
 
-  void _stateMaker({required AddToCartState newState}) => state = newState;
+  void _stateMaker({required ProductState newState}) => state = newState;
 
   void init(){
     getProductData();
