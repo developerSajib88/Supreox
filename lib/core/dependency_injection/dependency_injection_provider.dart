@@ -6,4 +6,4 @@ import 'package:supreox/core/dependency_injection/dependency_injection.dart';
 
 // Add to cart provider
 final addToCartProvider = StateNotifierProvider<AddToCartStateNotifier, AddToCartState>((ref) =>
-        AddToCartStateNotifier(addToCartDomain: getIt()));
+        AddToCartStateNotifier(addToCartDomain: getIt())..init());

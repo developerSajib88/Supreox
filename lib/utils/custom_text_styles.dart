@@ -5,33 +5,28 @@ import 'package:supreox/utils/color_palates.dart';
 
 class CustomTextStyles {
 
-  static TextStyle primaryTextStyles = GoogleFonts.dmSans(
+  static TextStyle primaryTextStyles = GoogleFonts.inter(
     fontSize: 8.sp,
     color: Colors.black,
     fontWeight: FontWeight.w400
   );
 
-  static TextStyle primaryTextStylesBold = GoogleFonts.dmSans(
-    fontSize: 8.sp,
-    color: ColorPalates.secondaryColor,
-    fontWeight: FontWeight.w600
-  );
 
-  static TextStyle titleTextStyles = GoogleFonts.dmSans(
+  static TextStyle titleTextStyles = GoogleFonts.inter(
     fontSize: 10.sp,
-    color: ColorPalates.secondaryColor,
+    color: ColorPalates.customBlack,
     fontWeight: FontWeight.bold
   );
 
 
-  static TextStyle descriptionTextStyles = GoogleFonts.dmSans(
+  static TextStyle descriptionTextStyles = GoogleFonts.inter(
       fontSize: 6.sp,
-      color: ColorPalates.secondaryColor,
+      color: ColorPalates.greyColor,
       fontWeight : FontWeight.normal
   );
 
 
-  static TextStyle buttonTextStyles = GoogleFonts.dmSans(
+  static TextStyle buttonTextStyles = GoogleFonts.inter(
       fontSize: 8.sp,
       color: ColorPalates.defaultWhite,
       fontWeight: FontWeight.bold

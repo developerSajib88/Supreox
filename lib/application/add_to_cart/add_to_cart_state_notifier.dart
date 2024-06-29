@@ -9,6 +9,10 @@ class AddToCartStateNotifier extends StateNotifier<AddToCartState>{
 
   void _stateMaker({required AddToCartState newState}) => state = newState;
 
+  void init(){
+    getProductData();
+  }
+
   Future<void> getProductData()async{
     _stateMaker(newState: state.copyWith(isLoading : true));
     await addToCartDomain.getProductDataRes().then((value) {

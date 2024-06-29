@@ -24,7 +24,7 @@ class Toaster {
         toastLength: Toast.LENGTH_LONG,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIosWeb: 1,
-        backgroundColor: ColorPalates.primaryColor,
+        backgroundColor: ColorPalates.deepOrange,
         textColor: Colors.white,
         fontSize: 16.0,
       );
