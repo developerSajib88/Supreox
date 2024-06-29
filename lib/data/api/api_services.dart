@@ -6,7 +6,7 @@ import 'package:supreox/data/model/product/product_data_res.dart';
 class ApiServices {
 
   // Get Home Screen Data API service
-  static Future<ProductDataRes?> getHomeScreenData() async {
+  static Future<ProductDataRes?> getProduct() async {
     Map<String, dynamic>? response = await ApiMethod().get(ApiUrls.productUri);
     if (response != null) {
       ProductDataRes productDataRes = ProductDataRes.fromJson(response);
