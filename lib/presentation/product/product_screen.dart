@@ -38,7 +38,6 @@ class ProductScreen extends HookConsumerWidget {
 
               const CalculatePrice()
 
-
             ],
           ),
 
